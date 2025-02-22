@@ -24,7 +24,7 @@ void loop() {
    }
    String payload = "{\"Temp\":" + String(t, 1)
                   + ",\"Humi\":" + String(h, 1)
-                  + ",\"Lux\":" + String(lux, 1) + "}" + "\n";
-   Serial.print(payload); 
+                  + ",\"Lux\":" + String(lux, 1) + "}";
+   Serial.println(payload); 
    delay(1000);
 }
