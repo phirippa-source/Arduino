@@ -22,9 +22,9 @@ void loop() {
       Serial.println(F("Failed to read from DHT sensor!"));
       return;
    }
-   String payload = "{\"Temp\":" + String(t,1)
+   String payload = "{\"Temp\":" + String(t, 1)
                   + ",\"Humi\":" + String(h, 1)
-                  + ",\"Lux\":" + String(lux) + "}" + "\n";
+                  + ",\"Lux\":" + String(lux, 1) + "}" + "\n";
    Serial.print(payload); 
    delay(1000);
 }
