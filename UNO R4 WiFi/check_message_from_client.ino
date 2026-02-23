@@ -28,9 +28,10 @@ void loop() {
   if (client) {
     //Serial.println("클라이언트 접속");
     while (client.connected()) {
-      if (client.available() > 0) {
+      while (client.available() > 0) {
         Serial.write( client.read() );
       }
+      break;
     }
     delay(1); // 응답 전송 안정화
     client.stop(); //연결 종료
