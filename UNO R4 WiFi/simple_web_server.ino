@@ -35,8 +35,8 @@ void loop() {
       // do Something!
       break;
     }
-  delay(1); // 응답 전송 안정화
-  client.stop(); //연결 종료
-  Serial.println("클라이언트 종료");
+    delay(1); // 응답 전송 안정화
+    client.stop(); //연결 종료
+    Serial.println("클라이언트 종료");
   }
 }
