@@ -1,6 +1,6 @@
 #include <WiFiS3.h>  // UNO R4 WiFi 전용 WiFi 라이브러리
-const char* ssid = "Ria2G";
-const char* password = "2026gogo";
+const char* ssid = "Ria2G";         // 본인이 사용 가능한 공유기 이름으로 변경
+const char* password = "2026gogo";  // 공유기 패스워드
 WiFiServer server(80);
 
 void setup() {
@@ -38,7 +38,7 @@ void loop() {
       client.println("<html><head><title>MY FIRST WEB SERVER</title></head>");
       client.println("<body>");
       client.println("<h1>Hello</h1>");
-      client.println("The web page from the UNO R4 WiFi Web server<br>");
+      client.println("The web page from the UNO R4 WiFi Web server!<br>");
       client.println("Created by ship");
       client.println("</body></html");
       break;
