@@ -37,9 +37,9 @@ void loop() {
           client.println("");
        
           if( digitalRead(USER_SW) ) {
-            client.println("<html><body> Pressed! </body></html>");
+            client.println("<html><body><h1>Not Pressed!</h1></body></html>");
           } else {
-            client.println("<html><body> Not pressed!</body></html>");
+            client.println("<html><body><h1>pressed!</h1></body></html>");
           }
           break;
         }
